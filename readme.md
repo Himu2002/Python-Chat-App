@@ -9,7 +9,6 @@ A modern, real-time chat application built with Python, Flask, and Socket.IO. Th
 - 🎨 Modern and responsive UI design
 - ✏️ Message editing and deletion
 - 👥 User join/leave notifications
-- 📱 Mobile-friendly design
 - 🎯 Smooth animations and transitions
 
 ## 🛠️ Tech Stack
@@ -106,4 +105,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-Made with ❤️ by [Your Name]
+Made with ❤️ by Himanshu Rawat
