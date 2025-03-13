@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for proper character encoding and responsive viewport -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python Chat App</title>
+    <!-- External CSS and Socket.IO client library -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.5/socket.io.js"></script>
+</head>
+
+<body>
+    <!-- Main chat container -->
+    <div class="chat-container">
+        <!-- Chat header with title -->
+        <div class="chat-header">Python Chat</div>
+        
+        <!-- Username section for updating display name -->
+        <div class="username-container">
+            <span id="current-username"></span>
+            <input type="text" id="username-input" placeholder="New username" />
+            <button id="update-username-button">Update Username</button>
+        </div>
+        
+        <!-- Messages display area -->
+        <div class="chat-messages" id="chat-messages"></div>
+        
+        <!-- Message input section -->
+        <div class="chat-input">
+            <input type="text" id="message-input" placeholder="Type your message..." />
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+
+    <!-- Message actions menu (edit/delete) -->
+    <div class="message-actions" id="message-actions">
+        <button class="edit-message-btn">✏️ Edit</button>
+        <button class="delete-message-btn">🗑️ Delete</button>
+    </div>
+
+    <!-- Custom JavaScript file -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+
+</html>
